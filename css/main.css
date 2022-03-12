@@ -1,0 +1,143 @@
+/* COLORS
+
+#DDD
+
+#F5F5F5
+
+#6495ED
+
+/* FONTS */
+
+legend,
+label,
+input,
+textarea {
+    font-family: 'Arial', 'Helvetica', 'Helvetica Neue', sans-serif;
+    color: #0C090D;
+
+
+}
+
+label,
+input,
+textarea {
+
+    font-size: 1rem;
+}
+
+legend {
+
+    font-size: 2rem;
+}
+
+body {
+    margin-top: 4rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+form {
+    line-height: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+    display: block;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+    max-width: 25rem;
+    z-index: 1;
+    border-style: solid;
+    border-color: #DDD;
+}
+
+input {
+    height: 2rem;
+}
+
+input,
+textarea {
+    width: 90%;
+}
+
+.absolute {
+    line-height: 2rem;
+    border-style: solid;
+    border-color: gray;
+    background-color: white;
+    margin-top: -5.5rem;
+    margin-left: -1.2rem;
+    padding: 0.4rem;
+    position: absolute;
+    z-index: 99;
+}
+
+#submit {
+    height: 3rem;
+    background-color: #6495ED;
+    color: white;
+    border-style: none;
+    border-radius: 0.5rem;
+
+}
+
+
+/*
+
+For visual aspekt i changed required 25-40 rem to 40. 
+
+*/
+
+@media only screen and (min-width: 40rem) {
+
+    form {
+
+        max-width: 50rem;
+    
+    }
+
+    .box1 {
+
+        grid-area: box1;
+    }
+
+    .box2 {
+
+        grid-area: box2;
+    }
+
+    .grid {
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "box1 box2"
+    }
+
+
+    #submit {
+        height: 3rem;
+        background-color: #6495ED;
+        color: white;
+        border-style: none;
+        border-radius: 0.5rem;
+        width: 10rem;
+
+    }
+
+    textarea {
+
+    width: 95%;
+    }
+
+}
+
+
+@media only screen and (min-width: 50rem) {
+
+form {
+
+    max-width: 50rem;
+
+}
+
+}
